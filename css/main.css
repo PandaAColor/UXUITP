@@ -1,0 +1,143 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(252, 251, 182);
+}
+/*Header*/
+header .redes-contenedor {
+    background-color: white;
+    height: auto;
+    display: flex;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+header .icons span {
+    color: rgb(135, 213, 239);
+}
+/*descipcion*/
+.descripcion {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Columna para la imagen y otra para el texto */
+    justify-items: center; /* Centra el contenido de cada celda */
+    align-items: center;
+    gap: 20px;
+    max-width: 800px; /* Opcional: limita el ancho */
+    margin: 0 auto
+}
+.descripcion-icon {
+    border-radius:150px;
+    overflow: hidden;
+    display: grid;
+    height: 200px;
+    width: 200px;
+}
+.descripcion-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: right;
+}
+.descripcion-texto{
+    text-align: center;
+    font-size: 18px;
+}
+.nombre {
+    font-size: 30px;
+    font-weight: 400px;
+}
+
+/*Muestras*/
+.contenedor-de-muestras {
+    background-color: white;
+    padding: 20px; /* Espacio alrededor de las imágenes y el título */
+    border-radius: 30px;
+}
+.titulo {
+    font-size: 28px;
+    text-align: center;
+    color: rgb(85, 185, 219);
+    -webkit-text-stroke: 0.2px white;
+}
+
+.muestra-contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 400px;
+    grid-gap: 20px;
+}
+.muestras img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.muestras .muestra2 {
+    object-fit: cover;
+    object-position: 0% 25%;
+    width: 100%;
+    height: 100%;
+}
+
+/*JAMS*/
+.trabajos-contenedor {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px 30px 20px;
+    
+}
+.trabajos-pasados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.trabajos {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.trabajos img {
+    display: block;  
+    margin: 0 auto; 
+}
+
+/*Footer*/
+footer {
+    background-color: white;
+    text-align: center;
+    -webkit-text-fill-color:rgb(135, 213, 239) ;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 0.5px;
+}
+
+
+/*RESPONSIVE*/
+@media(max-width:991px) {
+    .descripcion-icon {
+        border-radius:50px;
+        overflow: hidden;
+        display: grid;
+        height: 100px;
+        width: 100px;
+    }
+    .muestra-contenedor {
+        padding: 0px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .trabajos-pasados {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .redes-contenedor {
+        padding-left: 10px; 
+        padding-right: 0;
+    }
+}
+
